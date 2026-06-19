@@ -7,6 +7,11 @@ Learn more about [ESPHome](https://esphome.io/).
 
 Show the number of ESPHome devices based on their state.
 
+| ESPhome Version | Homepage Widget Version |                     Allowed Fields                     |
+| --------------- | ----------------------- | ------------------------------------------------------ |
+| <= 2026.5.3     | 1 (default)             | "total", "online", "offline", "offline_alt", "unknown" |
+| > 2026.6.0      | 2                       | "total", "online", "offline", "updates", "pending"     |
+
 Allowed fields: `["total", "online", "offline", "offline_alt", "unknown"]` (maximum of 4).
 
 By default ESPHome will only mark devices as `offline` if their address cannot be pinged. If it has an invalid config or its name cannot be resolved (by DNS) its status will be marked as `unknown`.
